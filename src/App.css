@@ -1,0 +1,42 @@
+body{
+  background-color: black;
+  color:rgba(255, 255, 255, 0.5);
+}
+.App {
+  /* text-align: center; */
+}
+
+.detail{
+  margin: 20px;
+  color:white;
+  font-family: sans-serif 'Times New Roman', Times;
+  font-size: 1.2rem;  
+}
+
+.detail img{
+   border-radius: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  width: 200px;
+  height: 350px;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  cursor: pointer;
+}
+.card img{
+  border-radius: 20px;
+}
