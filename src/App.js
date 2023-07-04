@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import Home from "./pages/Home";
 import Detial from "./pages/Detail";
+import Navbar from "./components/Navbar";
 import { useEffect } from "react";
 import fetchData from "./action/createAction";
 
@@ -39,8 +40,10 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/item/:id" element={<Detial />}></Route>
+        <Route path="/" element={<Navbar />}>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/item/:id" element={<Detial />}></Route>
+        </Route>
       </Routes>
     </div>
   );
